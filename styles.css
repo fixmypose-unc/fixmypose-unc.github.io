@@ -75,12 +75,9 @@ html, body {
 	text-align: center;
 }
 
-.main-content-left {
-	float: left;
-}
+.main-content-container {
+	display: flex;
 
-.main-content-right {
-	float: right;
 }
 
 .content-section {
@@ -168,8 +165,8 @@ code {
 #ethics {
 	background: #175da3;
 	width: 100%;
-	position: absolute;
-	bottom: -110%;
+	/**position: absolute;
+	bottom: -110%;**/
 	color: white;
 	text-align: center;
 }
@@ -177,16 +174,17 @@ code {
 #ethics>p {
 	width: 80%;
 	margin: auto;
-	margin-bottom: 25px;
 }
 
-@media only screen and (max-width: 1070px)  {
-	.main-content-left, .main-content-right {
-		float: none;
+
+@media only screen and (max-width: 1280px)  {
+	.main-content-container {
+		flex-direction: column;
+		text-align: center;
+	}
+	.main-content-container>div {
+		width: 80%;
 		margin: auto;
-		position: relative;
-		top: 20px;
-		width: 90%;
 	}
 }
 

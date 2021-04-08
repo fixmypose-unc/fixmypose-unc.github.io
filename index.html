@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>FixMyPose</title>
 		<link rel="stylesheet" href="styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<div class="header">
@@ -26,104 +27,172 @@
 					</div>
 				</div>
 			</div>
-			<div class="main-content-left">
-				<div class="content-section">
-					<div class="content-header">
-						What is FixMyPose/फिक्समाइपोज़?
-					</div>
-					<div class="content-text">
-						<div style="text-align:left;">
-							FixMyPose is a new captioning dataset for learning how to write pose correctional descriptions and target pose identification.
-							Agents are given two tasks, Pose Correctional Captioning and Target Pose Retrieval. In the Pose Correctional Captioning task, agents should write
-							correctional descriptions on how a person shown in the current image can move to reach the pose of the person shown in the target image.
-							During the Target Pose Retrieval task, agents are given the current image and a natural language correctional description and are asked
-							to identify what the target image should be. In both cases, agents require a deep understanding of object referring expressions, 3D depth, and spatial relationships
-							in order to successfully complete the task.
+			<div class="main-content-container">
+				<div class="main-content-left">
+					<div class="content-section">
+						<div class="content-header">
+							What is FixMyPose/फिक्समाइपोज़?
 						</div>
-						<br><br>
-						<div class="gif-container">
-							<div class="gif">
-								<img src="fixmypose_final_gif.gif" alt="FixMyPose Gif">
+						<div class="content-text">
+							<div style="text-align:left;">
+								FixMyPose is a new captioning dataset for learning how to write pose correctional descriptions and target pose identification.
+								Agents are given two tasks, Pose Correctional Captioning and Target Pose Retrieval. In the Pose Correctional Captioning task, agents should write
+								correctional descriptions on how a person shown in the current image can move to reach the pose of the person shown in the target image.
+								During the Target Pose Retrieval task, agents are given the current image and a natural language correctional description and are asked
+								to identify what the target image should be. In both cases, agents require a deep understanding of object referring expressions, 3D depth, and spatial relationships
+								in order to successfully complete the task.
 							</div>
-							<!--<div class="english">
-								<div class="gif-header">
-									Demo Gif (English):
+							<br><br>
+							<div class="gif-container">
+								<div class="gif">
+									<img src="fixmypose_final_gif.gif" alt="FixMyPose Gif">
 								</div>
-								<img src="english_final_compressed.gif" alt="ArraMon English Gif">
+								<!--<div class="english">
+									<div class="gif-header">
+										Demo Gif (English):
+									</div>
+									<img src="english_final_compressed.gif" alt="ArraMon English Gif">
+								</div>
+								<div class="hindi">
+									<div class="gif-header">
+										Demo Gif (Hindi):
+									</div>
+									<img src="hindi_final_compressed.gif" alt="ArraMon Hindi Gif">
+								</div>-->
 							</div>
-							<div class="hindi">
-								<div class="gif-header">
-									Demo Gif (Hindi):
-								</div>
-								<img src="hindi_final_compressed.gif" alt="ArraMon Hindi Gif">
-							</div>-->
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="main-content-right">
-				<div class="content-section">
-					<div class="content-header">
-						Paper / Code / Dataset
-					</div>
-					<div class="content-text">
-						Please see our AAAI 2021 Paper.<br><br>
-						<a style="text-decoration:none;" href="https://arxiv.org/abs/2104.01703">
-							<div class="button">
-								<div class="button-content">
-									Paper
+				<div class="main-content-right">
+					<div class="content-section">
+						<div class="content-header">
+							Paper / Code / Dataset
+						</div>
+						<div class="content-text">
+							Please see our AAAI 2021 Paper.<br><br>
+							<a style="text-decoration:none;" href="https://arxiv.org/abs/2104.01703">
+								<div class="button">
+									<div class="button-content">
+										Paper
+									</div>
 								</div>
+							</a>
+							<br>
+							Please see our Github page for the code/dataset and how to get started.<br><br>
+							<a style="text-decoration:none;" href="https://github.com/hyounghk/FixMyPose">
+								<div class="button">
+									<div class="button-content">
+										Github
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!--<div class="content-section">
+						<div class="content-header">
+							Evaluation
+						</div>
+						<div class="content-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel felis arcu. Nullam velit mi, feugiat et venenatis eu,
+							elementum eu quam. Aenean viverra sapien ac mauris convallis, at malesuada lorem ultricies. Nulla pulvinar purus et tristique
+							congue. Nam tortor nunc, laoreet sed accumsan vel, tempus eget orci. Cras elementum pellentesque tortor non tempus. Nunc
+							malesuada libero at sapien suscipit suscipit. Donec nisl odio, eleifend euismod neque vitae, volutpat 	scelerisque nibh.
+							Proin egestas ut libero cursus lobortis. Nulla facilisi.
+						</div>
+					</div>-->
+					<div class="content-section">
+						<div class="content-header">
+							Citation
+						</div>
+						<div class="content-text">
+							If you use FixMyPose please cite our paper with this BibTeX entry.
+							<br><br>
+							<div class="code-container">
+								<code>
+									@inproceedings{Kim2021FixMyPosePC,<br>
+										&nbsp;&nbsp;title={FixMyPose: Pose Correctional Captioning and Retrieval},<br>
+										&nbsp;&nbsp;author={Hyounghun Kim and Abhaysinh Zala and Graham Burri and M. Bansal},<br>
+										&nbsp;&nbsp;booktitle={AAAI},<br>
+										&nbsp;&nbsp;year={2021}<br>
+									}
+								</code>
 							</div>
-						</a>
+						</div>
+					</div>
+					<div class="content-section">
+						<div class="content-header">
+							Pose Correctional Captioning Score List
+						</div>
+						<div class="content-text">
+							<div class="contact">
+								Please contact fixmypose.unc@gmail.com for the test-unseen split.
+							</div>
+							<div class="leaderboard-container">
+								<table class="leaderboard-table">
+									<thead>
+										<tr>
+											<th class="theader" rowspan="2">Rank</th>
+											<th class="theader" rowspan="2">Model</th>
+											<th class="theader" rowspan="2">Code</th>
+											<th class="theader" rowspan="2">Language</th>
+											<th class="theader" colspan="4">Automated Metrics</th>
+											<th class="theader" colspan="4">Task-Specific Metrics</th>
+										</tr>
+										<tr>
+											<th class="theader">B4</th>
+											<th class="theader">C</th>
+											<th class="theader">M</th>
+											<th class="theader">R</th>
+
+											<th class="theader">OM</th>
+											<th class="theader">BM</th>
+											<th class="theader">DM</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="tdata" rowspan="2">
+												1
+												<br>
+												September 9th, 2020
+											</td>
+											<td class="tdata" rowspan="2">
+												Baseline Model
+												<br>
+												UNC Chapel Hill
+												<br>
+												<a href="https://arxiv.org/abs/2104.01703">(Kim, Zala, et al. 2020)</a>
+											</td>
+											<td class="tdata" rowspan="2">
+												<a href="https://github.com/hyounghk/FixMyPose">Github</a>
+											</td>
+											<td class="tdata">English</td>
+											<td class="tdata">17.26</td>
+											<td class="tdata">6.40</td>
+											<td class="tdata">21.30</td>
+											<td class="tdata">34.82</td>
+											<td class="tdata">0.04</td>
+											<td class="tdata">1.42</td>
+											<td class="tdata">0.17</td>
+										</tr>
+										<tr>
+											<td class="tdata">Hindi</td>
+											<td class="tdata">18.98</td>
+											<td class="tdata">6.69</td>
+											<td class="tdata">28.47</td>
+											<td class="tdata">34.53</td>
+											<td class="tdata">0.03</td>
+											<td class="tdata">1.52</td>
+											<td class="tdata">0.11</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
 						<br>
-						Please see our Github page for the code/dataset and how to get started.<br><br>
-						<a style="text-decoration:none;" href="https://github.com/hyounghk/FixMyPose">
-							<div class="button">
-								<div class="button-content">
-									Github
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!--<div class="content-section">
-					<div class="content-header">
-						Evaluation
-					</div>
-					<div class="content-text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel felis arcu. Nullam velit mi, feugiat et venenatis eu,
-						elementum eu quam. Aenean viverra sapien ac mauris convallis, at malesuada lorem ultricies. Nulla pulvinar purus et tristique
-						congue. Nam tortor nunc, laoreet sed accumsan vel, tempus eget orci. Cras elementum pellentesque tortor non tempus. Nunc
-						malesuada libero at sapien suscipit suscipit. Donec nisl odio, eleifend euismod neque vitae, volutpat 	scelerisque nibh.
-						Proin egestas ut libero cursus lobortis. Nulla facilisi.
-					</div>
-				</div>-->
-				<div class="content-section">
-					<div class="content-header">
-						Citation
-					</div>
-					<div class="content-text">
-						If you use FixMyPose please cite our paper with this BibTeX entry.
-						<br><br>
-						<div class="code-container">
-							<code>
-								@inproceedings{Kim2021FixMyPosePC,<br>
-									&nbsp;&nbsp;title={FixMyPose: Pose Correctional Captioning and Retrieval},<br>
-									&nbsp;&nbsp;author={Hyounghun Kim and Abhaysinh Zala and Graham Burri and M. Bansal},<br>
-									&nbsp;&nbsp;booktitle={AAAI},<br>
-									&nbsp;&nbsp;year={2021}<br>
-								  }
-							</code>
-						</div>
-					</div>
-				</div>
-				<div class="content-section">
-					<div class="content-header">
-						Pose Correctional Captioning Score List
-					</div>
-					<div class="content-text">
-						<div class="contact">
-							Please contact fixmypose.unc@gmail.com for the test-unseen split.
+						<br>
+						<div class="content-header">
+							Target Pose Retrieval Score List
 						</div>
 						<div class="leaderboard-container">
 							<table class="leaderboard-table">
@@ -132,109 +201,44 @@
 										<th class="theader" rowspan="2">Rank</th>
 										<th class="theader" rowspan="2">Model</th>
 										<th class="theader" rowspan="2">Code</th>
-										<th class="theader" rowspan="2">Language</th>
-										<th class="theader" colspan="4">Automated Metrics</th>
-										<th class="theader" colspan="4">Task-Specific Metrics</th>
+										<th class="theader" colspan="2">Accuracy (%)</th>
 									</tr>
 									<tr>
-										<th class="theader">B4</th>
-										<th class="theader">C</th>
-										<th class="theader">M</th>
-										<th class="theader">R</th>
-
-										<th class="theader">OM</th>
-										<th class="theader">BM</th>
-										<th class="theader">DM</th>
+										<th class="theader">English</th>
+										<th class="theader">Hindi</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td class="tdata" rowspan="2">
+										<td class="tdata">
 											1
 											<br>
 											September 9th, 2020
 										</td>
-										<td class="tdata" rowspan="2">
+										<td class="tdata">
 											Baseline Model
 											<br>
 											UNC Chapel Hill
 											<br>
 											<a href="https://arxiv.org/abs/2104.01703">(Kim, Zala, et al. 2020)</a>
 										</td>
-										<td class="tdata" rowspan="2">
+										<td class="tdata">
 											<a href="https://github.com/hyounghk/FixMyPose">Github</a>
 										</td>
-										<td class="tdata">English</td>
-										<td class="tdata">17.26</td>
-										<td class="tdata">6.40</td>
-										<td class="tdata">21.30</td>
-										<td class="tdata">34.82</td>
-										<td class="tdata">0.04</td>
-										<td class="tdata">1.42</td>
-										<td class="tdata">0.17</td>
-									</tr>
-									<tr>
-										<td class="tdata">Hindi</td>
-										<td class="tdata">18.98</td>
-										<td class="tdata">6.69</td>
-										<td class="tdata">28.47</td>
-										<td class="tdata">34.53</td>
-										<td class="tdata">0.03</td>
-										<td class="tdata">1.52</td>
-										<td class="tdata">0.11</td>
+										<td class="tdata">38.49</td>
+										<td class="tdata">37.84</td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="content-header">
-						Target Pose Retrieval Score List
-					</div>
-					<div class="leaderboard-container">
-						<table class="leaderboard-table">
-							<thead>
-								<tr>
-									<th class="theader" rowspan="2">Rank</th>
-									<th class="theader" rowspan="2">Model</th>
-									<th class="theader" rowspan="2">Code</th>
-									<th class="theader" colspan="2">Accuracy (%)</th>
-								</tr>
-								<tr>
-									<th class="theader">English</th>
-									<th class="theader">Hindi</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="tdata">
-										1
-										<br>
-										September 9th, 2020
-									</td>
-									<td class="tdata">
-										Baseline Model
-										<br>
-										UNC Chapel Hill
-										<br>
-										<a href="https://arxiv.org/abs/2104.01703">(Kim, Zala, et al. 2020)</a>
-									</td>
-									<td class="tdata">
-										<a href="https://github.com/hyounghk/FixMyPose">Github</a>
-									</td>
-									<td class="tdata">38.49</td>
-									<td class="tdata">37.84</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+					<br><br><br><br><br>
 				</div>
-				<br><br><br><br><br>
 			</div>
 
 			
 			<div id="ethics">
+				<br>
 				<h3>Ethics Statement</h3>
 				<p>Our paper and dataset hopes to enable people to improve their health and well-being, as well as strives to follow ethical standards,
 					e.g., we especially try to maintain balance across diverse demographics and avoid privacy concerns by collecting data from a simulated
@@ -243,6 +247,7 @@
 					might also lead to difficult/unnatural poses. Presenting models’ confidence scores can help people ignore such unnatural pose corrections;
 					however, most importantly, careful use is required for real-world applications (similar to all other image captioning models/tasks, e.g.,
 					the ones used for accessibility and visual assistance), and further broader discussion on developing fail-safe AI systems is needed.</p>
+					<br><br>
 			</div>
 		</div>
 	</body>
